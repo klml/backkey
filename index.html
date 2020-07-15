@@ -29,12 +29,23 @@ height: 33px;
 list-style-type: none;
 display: inline;
 }
+.col ul li {
+border: 1px solid #000;
+}
 .col ul b,
 .example {
-border: 1px solid #000;
 margin-right: 5px;
 letter-spacing: -10px;
 padding-right: 4px;
+}
+.col ul b:before,
+.example:before {
+    content:"⠇⠇";
+    color: white;
+    margin-right: -17px;
+}
+.col ul.single b:before {
+    margin-right: -13px;
 }
 .col ul em {
 display: none;
